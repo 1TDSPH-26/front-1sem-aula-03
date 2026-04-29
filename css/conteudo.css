@@ -1,11 +1,33 @@
 
 
-.conteudo__container{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
 
 /*
  Alunos!!
   Finalizar esta seção com o grid-layout
 */
+
+.conteudo__sec{
+    background-color: #df6161;
+    padding: 1.5rem;
+    margin: 1rem;
+    border-radius: 5px;
+    box-shadow: 0px 0px 0px none;
+    transition: box-shadow 0.5s ease-in;
+
+}
+.conteudo__sec:hover{
+    box-shadow: 7px 7px 10px rgb(33, 32, 102);
+
+}
+.conteudo__container{
+    display: grid;
+    /*grid-template-columns: repeat(3, 1fr);*/
+    grid-template-columns: 1fr 2fr 1fr;
+}
+@media (min-width: 320px) and (max-width: 425px){
+    .conteudo__container{
+    display: grid;
+    /*grid-template-columns: repeat(3, 1fr);*/
+    grid-template-columns: 1fr ;
+}
+}
