@@ -35,9 +35,15 @@
     line-height: 1.5;
 }
 
-@media (min-width:320px){
+@media (min-width:320px) and (max-width: 425px){
+    .hero{
+        height: 45%;
+    }
+    
     .hero__container{
       padding: 5%;
+      justify-content: flex-start;
+      gap: 2rem;
     }
 
     .hero__title{
