@@ -9,15 +9,25 @@
 .cabecalho__navbar,
 .cabecalho__lista {
   width: 100%;
-  height: 100%;
+
+}
+
+.cabecalho__lista {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  
 }
 
 .cabecalho__lista {
   display: flex;
   justify-content: center;
 }
+.cabecalho__list-item {
+  display: inline-block;
+}
 
-@media (min-width: 320px) {
+@media (min-width: 320px) and (max-width: 425px) {
   .cabecalho {
     background: #1b0530;
     background: linear-gradient(
@@ -26,11 +36,20 @@
       rgb(98, 53, 105) 35%,
       rgb(36, 1, 36) 100%
     );
-    padding: 2rem;
+    padding: 0;
   }
 
   .cabecalho__list-item {
-    margin: 0 0.2rem;
+    margin: 0 0.6rem;
+    
+  }
+
+  .cabecalho__lista {
+    justify-content: space-evenly;
+  }
+
+  .cabecalho__link {
+    font-size: 1.4rem;
   }
 }
 

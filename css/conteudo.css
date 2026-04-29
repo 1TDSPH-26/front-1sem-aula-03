@@ -1,5 +1,9 @@
 
-
+.conteudo__sec {
+    background-color: rgb(207, 178, 49);
+    margin: 1rem;
+    padding: 1.5rem;
+}
 .conteudo__container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
