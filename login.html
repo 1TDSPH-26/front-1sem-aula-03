@@ -31,8 +31,33 @@
               <legend>Login</legend>
               <div>
                 <label for="idEmail">Email</label>
-                <input type="text" id="idEmail">
+                <input
+                  type="email"
+                  name="email"
+                  id="idEmail"
+                  placeholder="Digite seu email"
+                  minlength="13"
+                  maxlength="150"
+                  required
+                  oninvalid="setCustomValidity(`Existem erros no campo ${this.name}.`)"
+                />
               </div>
+              <div>
+                <label for="idSenha">Senha</label>
+                <input
+                  type="password"
+                  name="senha"
+                  id="idSenha"
+                  placeholder="Digite sua senha"
+                  minlength="5"
+                  maxlength="30"
+                  required
+                  oninvalid="setCustomValidity(`Existem erros no campo ${this.name}.`)"
+                />
+              </div>
+              <div>
+                <button type="submit" id="btnEntrar">Entrar</button>
+            </div>
             </fieldset>
           </form>
 
