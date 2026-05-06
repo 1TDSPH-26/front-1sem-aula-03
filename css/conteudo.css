@@ -1,10 +1,12 @@
 
+
 .conteudo__sec {
     background-color: rgb(207, 178, 49);
     margin: 1rem;
     padding: 1.5rem;
     box-shadow: 0px 0px 10px none;
     transition: box-shadow 0.5s ease-in-out;
+    max-width: 100%;
 }
 
 .conteudo__sec:hover {
@@ -21,3 +23,9 @@
  Alunos!!
   Finalizar esta seção com o grid-layout
 */
+@media (min-width: 320px) and (max-width: 425px) {
+    .conteudo__container {
+        grid-template-columns: 1fr;
+        
+    }
+}
