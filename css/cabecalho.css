@@ -20,6 +20,7 @@
 
 .cabecalho__list-item {
   display: inline-block;
+  margin: 0 2rem;
 }
 
 @media (min-width: 320px) and (max-width: 425px){
