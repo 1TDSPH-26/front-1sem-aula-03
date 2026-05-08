@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ESPORTE TOTAL - LOGIN</title>
     <link rel="stylesheet" href="./css/main.css" />
+
+    <script src="./js/script.js"></script>
   </head>
   <body>
     <header class="cabecalho">
@@ -39,7 +41,9 @@
                   minlength="13"
                   maxlength="150"
                   required
-                  oninvalid="setCustomValidity(`Existem erros no campo ${this.name}.`)"
+                  oninvalid="
+                    setCustomValidity(`Existem erros no campo ${this.name}.`)
+                  "
                 />
               </div>
               <div>
@@ -52,12 +56,14 @@
                   minlength="5"
                   maxlength="30"
                   required
-                  oninvalid="setCustomValidity(`Existem erros no campo ${this.name}.`)"
+                  oninvalid="
+                    setCustomValidity(`Existem erros no campo ${this.name}.`)
+                  "
                 />
               </div>
               <div>
-                <button type="submit" onclick="console.log('Olá, mundo!')" id="btnEntrar">Entrar</button>
-            </div>
+                <button type="submit" id="btnEntrar">Entrar</button>
+              </div>
             </fieldset>
           </form>
 
@@ -75,8 +81,5 @@
     <footer>
       <p class="unico">ESPORTE TOTAL &copy; - Todos os direitos reservados</p>
     </footer>
-
-
-
   </body>
 </html>
