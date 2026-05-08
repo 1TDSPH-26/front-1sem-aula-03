@@ -49,6 +49,7 @@ if(true){
     //Redeclarando
     var nome1 = "João";
     let nome2 = "das Neves";
+    console.log(nome2);
 }
 console.log(nome1);
 console.log(nome2);
