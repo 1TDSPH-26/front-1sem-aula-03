@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ESPORTE TOTAL - LOGIN</title>
     <link rel="stylesheet" href="./css/main.css" />
+    <script src="./js/script.js"></script>
   </head>
   <body>
     <header class="cabecalho">
@@ -14,7 +15,9 @@
             <a
               class="cabecalho__link cabecalho__link--active"
               href="./index.html"
-              >Home</a>
+              >Home</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
@@ -22,33 +25,57 @@
     <main class="conteudo">
       <section class="hero">
         <div class="hero__container">
-          <h1 class="hero__title">Controle de acesso</h1>
-          
-            <form action="#" method="GET">
-                <fieldset>
-                    <legend>Login</legend>
-                    <div>
-                        <label for="idEmail">Email</label>
-                        <input type="email" name="email" id="idEmail" placeholder="Digite seu email" minlength="13" maxlength="150" required oninvalid="setCustomValidty(`Existem erros no campo! ${this.name}`)">
-                    </div>
-                    <div>
-                        <label for="idSenha">Senha</label>
-                        <input type="password" name="senha" id="idSenha" placeholder="Digite sua senha" minlength="5" maxlength="30" required oninvalid="setCustomValidty(`Existem erros no campo! ${this.name}`)">
-                    </div>
-                    <button type="submit" id="btnEntrar">Entrar</button>
-                </fieldset>
+          <h1 class="hero__title">CONTROLE DE ACESSO</h1>
 
-            </form>
+          <form action="#" method="GET">
+            <fieldset>
+              <legend>Login</legend>
+              <div>
+                <label for="idEmail">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="idEmail"
+                  placeholder="Digite seu email"
+                  minlength="13"
+                  maxlength="150"
+                  required
+                  oninvalid="setCustomValidity(`Existem erros no campo ${this.name}.`)"
+                />
+              </div>
+              <div>
+                <label for="idSenha">Senha</label>
+                <input
+                  type="password"
+                  name="senha"
+                  id="idSenha"
+                  placeholder="Digite sua senha"
+                  minlength="5"
+                  maxlength="30"
+                  required
+                  oninvalid="setCustomValidity(`Existem erros no campo ${this.name}.`)"
+                />
+              </div>
+              <div>
+                <button type="submit" id="btnEntrar">Entrar</button>
+            </div>
+            </fieldset>
+          </form>
 
-
-          <span>Não tem uma conta?</span><a aria-label="Para criar uma conta" class="hero__btn" href="./pagina1.html">clique aqui</a>
+          <span>Não tem uma conta?</span
+          ><a
+            aria-label="Para criar uma conta"
+            class="hero__btn"
+            href="./cadastro.html"
+            >clique aqui</a
+          >
         </div>
+      </section>
     </main>
 
     <footer>
-      <p class="unico">
-        ESPORTE TOTAL &copy; - Todos os direitos reservados
-      </p>
+      <p class="unico">ESPORTE TOTAL &copy; - Todos os direitos reservados</p>
     </footer>
+
   </body>
 </html>
