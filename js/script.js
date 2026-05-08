@@ -1,0 +1,55 @@
+
+//Declaração de variáveis com JS
+//3 tipos = var / let / const
+/*
+*Comentário de Bloco
+*/
+
+//Declaração com var:
+//var nome = "Fiap";
+//console.log("A melhor faculdade :" + nome);
+
+//var nr1 = 10;
+//var nr2 = 5;
+//console.log("Resultado da soma : " + (nr1 + parseInt(nr2) ));
+// var variavel= "Diego"
+// console.log(typeof variavel);
+
+// variavel = 100;
+// console.log(typeof variavel);
+
+// variavel = true;
+// console.log(typeof variavel);
+
+// variavel = null;
+// console.log(typeof variavel);
+
+// variavel = [];
+// console.log(typeof variavel);
+
+// variavel = [];
+// console.log(typeof variavel);
+
+// variavel = 100.456;
+// console.log(typeof variavel);
+
+// //Criando um ternário e mexendo com calculos
+
+// let idade = 17;
+// const resultado = idade > 18 ? "Pode passear" : "Não pode passear";
+
+// // utilizando template literals `` com interpolação ${}
+// console.log(`O resultado é que ele ${resultado.toLocaleLowerCase()}.`)
+
+var nome1 = "Diego";
+let nome2 ="Carlos";
+
+if(true){
+    //Redeclarando as variáveis em escopo diferente
+    var nome1= "Joaquim";
+    let nome2 = "das Couves"
+}
+
+//Imprimir as variáveis do escopo principal
+console.log(nome1);
+console.log(nome2);
