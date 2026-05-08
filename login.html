@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ESPORTE TOTAL</title>
     <link rel="stylesheet" href="./css/main.css" />
+    <script src="./js/script.js"></script>
   </head>
   <body>
     <header class="cabecalho">
@@ -35,92 +36,59 @@
     <main class="conteudo">
       <section class="hero">
         <div class="hero__container">
-          <h1 class="hero__title">Controle de Acesso</h1>
-          <form action="" method="">
+          <h1 class="hero__title">CONTROLE DE ACESSO</h1>
+
+          <form action="#" method="GET">
             <fieldset>
-                <legend>Login</legend>
-                <div>
-                    <label for="idEmail">Email</label>
-                    <input type="email" name="email" id="idEmail" placeholder="Digite seu email" minlength="13" maxlength="150" required oninvalid="setCustomValidity('Existem erros no campo')">
-                </div>
-                <div>
-                    <label for="idSenha">Senha</label>
-                    <input type="password" name="senha" id="idSenha" placeholder="Digite sua senha" minlength="8" maxlength="150" required oninvalid="setCustomValidity('Existem erros no campo ${this.name}.')">
-                </div>
-                <div>
-                    <button type="submit">Entrar</button>
-
-                </div>
+              <legend>Login</legend>
+              <div>
+                <label for="idEmail">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="idEmail"
+                  placeholder="Digite seu email"
+                  minlength="13"
+                  maxlength="150"
+                  required
+                  oninvalid="setCustomValidity(`Existem erros no campo ${this.name}.`)"
+                />
+              </div>
+              <div>
+                <label for="idSenha">Senha</label>
+                <input
+                  type="password"
+                  name="senha"
+                  id="idSenha"
+                  placeholder="Digite sua senha"
+                  minlength="5"
+                  maxlength="30"
+                  required
+                  oninvalid="setCustomValidity(`Existem erros no campo ${this.name}.`)"
+                />
+              </div>
+              <div>
+                <button type="submit" id="btnEntrar">Entrar</button>
+            </div>
             </fieldset>
-
-
           </form>
 
-          <span>Não tem uma conta?</span>
-          <a aria-label="link" class="hero__btn" href="./pagina1.html">Clique aqui</a>
+          <span>Não tem uma conta?</span
+          ><a
+            aria-label="Para criar uma conta"
+            class="hero__btn"
+            href="./cadastro.html"
+            >clique aqui</a
+          >
         </div>
       </section>
-
-      <div class="conteudo__container">
-        <section class="conteudo__sec">
-          <h2 class="conteudo__sub-title">Página 1</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-            molestias repudiandae quas velit nemo rem amet vel. Aliquam
-            blanditiis, perspiciatis nihil dicta quaerat, similique, mollitia
-            fugiat et necessitatibus id quam!
-          </p>
-          <a href="./pagina1.html">mais...</a>
-        </section>
-        <section class="conteudo__sec">
-          <h2 class="conteudo__sub-title">Página 2</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-            molestias repudiandae quas velit nemo rem amet vel. Aliquam
-            blanditiis, perspiciatis nihil dicta quaerat, similique, mollitia
-            fugiat et necessitatibus id quam!
-          </p>
-          <a href="./paginas/pagina2.html">mais...</a>
-        </section>
-        <section class="conteudo__sec">
-          <h2 class="conteudo__sub-title">Página 3</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-            molestias repudiandae quas velit nemo rem amet vel. Aliquam
-            blanditiis, perspiciatis nihil dicta quaerat, similique, mollitia
-            fugiat et necessitatibus id quam!
-          </p>
-          <a href="./paginas/pagina2.html">mais...</a>
-        </section>
-        
-      </div>
     </main>
 
     <footer>
       <p class="unico">
-        Alexandre C. de Jesus &copy; - Todos os direitos reservados
+        ESPORTES TOTAL &copy; - Todos os direitos reservados
       </p>
     </footer>
-
-    <script>
-        // COmentário de linha
-        /* 
-        Comentário de bloco 
-        */
-
-        //Formas de saída de texto no JS:
-            //Função alert(string);
-                alert('Oá mundo') // Carrega antes da página
-                console.log('Olá mundo!')
-                console.warn('Olá mundo!') //Mostra amarelo como aviso
-                console.error('Olá mundo!') //Mostra vermelho como erro
-                console.info('Olá mundo!') //Mostra como informação
-
-
-
-
-
-    </script>
 
   </body>
 </html>
